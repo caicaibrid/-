@@ -1,0 +1,12 @@
+<template name="movie_list">
+    <view  wx:key="{{index}}" wx:for="{{movieList}}" class="movie_list_list">
+        <navigator url="../logs/logs" open-type="navigate">
+            <image class="cover" src="{{item.cover}}"></image>
+            <block>
+                <image wx:if="{{item.is_new}}" class="new" src="/static/img/ic_new.png"></image>
+                <text class="title">{{item.title}}</text>
+                <text class="rate">{{item.rate}}</text>
+            </block>
+        </navigator>
+    </view>
+</template>

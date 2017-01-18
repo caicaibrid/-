@@ -1,0 +1,3 @@
+<view>{{contact}}</view>
+
+<canvas style="width:100%;height:1000px" canvas-id="first" />

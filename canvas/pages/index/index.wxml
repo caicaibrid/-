@@ -1,0 +1,20 @@
+<!--index.wxml
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->
+<button type="default" bindtap="upload">上传</button>
+<image src="{{img}}"></image>
+{{userInfo}}
+<button bindtap="phone">
+dadianhua</button>
+<view hidden="{{hidden}}">
+  x={{x}},y={{y}}
+</view>
+<canvas bindtouchstart="start" bindtouchmove="move" bindtouchend="end" canvas-id="first" />

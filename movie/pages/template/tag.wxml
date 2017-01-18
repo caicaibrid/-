@@ -1,0 +1,7 @@
+<template name="tag">
+    <scroll-view bindtap="bindTagTap" class="tag-scroll" scroll-x="true">
+        <block wx:for="{{tagData}}"  wx:key="{{index}}">
+            <view id="{{item}}" data-current="{{index}}" class="{{tagCurrent==index?'active':''}} tag-scroll-item">{{item}}</view>
+        </block>
+    </scroll-view>
+</template>

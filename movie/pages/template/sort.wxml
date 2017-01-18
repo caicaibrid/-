@@ -1,0 +1,9 @@
+<template name="sort">
+    <view class="sort">
+        <radio-group bindchange="radioChange">
+            <label wx:key="{{index}}" class="radio" wx:for="{{sortList}}">
+                <radio value="{{item.name}}" color="{{item.color}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+    </view>
+</template>

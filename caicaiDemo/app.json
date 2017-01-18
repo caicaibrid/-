@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/tolist",
+    "pages/list/list",
+    "pages/about/about",
+    "pages/contact/contact",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "backgroundColor":"#eee",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "caicaiDemo",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "backgroundColor":"#333",
+    "color":"#E0CCFF",
+    "selectedColor":"#d81e06",
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"index",
+      "iconPath":"static/img/index.png",
+      "selectedIconPath":"static/img/index_active.png"
+    },{
+      "pagePath":"pages/list/list",
+      "text":"list",
+      "iconPath":"static/img/list.png",
+      "selectedIconPath":"static/img/list_active.png"
+    },{
+      "pagePath":"pages/about/about",
+      "text":"about",
+      "iconPath":"static/img/about.png",
+      "selectedIconPath":"static/img/about_active.png"
+    },{
+      "pagePath":"pages/contact/contact",
+      "text":"contact",
+      "iconPath":"static/img/contact.png",
+      "selectedIconPath":"static/img/contact_active.png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"logs",
+      "iconPath":"static/img/log.png",
+      "selectedIconPath":"static/img/log_active.png"
+    }]
+  }
+}

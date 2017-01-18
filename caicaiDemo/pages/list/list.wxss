@@ -1,0 +1,15 @@
+/* pages/list/list.wxss */
+.buttonStyle{
+    width: 80%;
+    margin: 0 auto;
+}
+button{
+    margin-top: 15px;
+}
+.button-hover{
+    background: lightsteelblue;
+    color: #ff0000;
+}
+.placeholder{
+    color: #895562;
+}

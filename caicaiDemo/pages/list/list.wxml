@@ -1,0 +1,66 @@
+<view>
+    <text>icon List\n</text>
+    <block wx:key="{{index}}"  wx:for="{{iconType}}">
+        <icon type="{{iconType[index]}}" color="{{iconColor[index]}}" size="{{iconSize[index]}}"></icon>
+    </block>
+</view>
+
+<view class="buttonStyle">
+    <button>button1</button>
+    <button size="default">default - button1</button>
+    <button size="mini">mini - button1</button>
+    <button type="primary" loading="true">primary -- button</button>
+    <button type="warn" plain="true">warn -- button</button>
+</view>
+
+<view class="buttonStyle">
+    <form>
+        <input type="text" cursor-spacing="20" placeholder="name"/>
+        <input type="text" maxlength="8" password="true" placeholder="password最多8位"/>
+        <input focus="true"  type="idcard" placeholder="身份证"/>
+        <input placeholder-class="placeholder"  type="number" placeholder="数字"/>
+        <input placeholder-style="color:green" type="digit" placeholder="带小数点的输入框"/>
+        <checkbox-group>
+            <checkbox color="#ff0000" value="cn">中国</checkbox>
+            <checkbox checked="true" value="us">美国</checkbox>
+            <checkbox color="#000" value="jp">日本</checkbox>
+        </checkbox-group>
+        <switch checked='true' type="switch" />
+        <switch type="switch" />
+        <switch color="#ff0000" type="checkbox" />
+        <radio-group>
+            <radio color="red" value="1">男</radio>
+            <radio color="blue" value="0">女</radio>
+        </radio-group>
+        <textarea auto-height="true" maxlength="10"/>
+        <picker value="{{index}}" bindchange="selectorChange" range="{{array}}" mode="selector">
+            <view>
+                {{array[index]}}
+            </view>
+        </picker>
+        <picker value="{{time}}" bindchange="timeChange" start="09:30" end="19:00" mode="time">
+            <view>
+                {{time}}
+            </view>
+        </picker>
+        <picker value="{{date}}" bindchange="dateChange" start="2016-01-01" end="2016-12-30" mode="date">
+            <view>
+                {{date}}
+            </view>
+        </picker>
+        <view>{{year}}年{{month}}月{{day}}日</view>
+        <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="pickerViewChange">
+            <picker-view-column>
+            <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+            </picker-view-column>
+            <picker-view-column>
+            <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+            </picker-view-column>
+            <picker-view-column>
+            <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+            </picker-view-column>
+        </picker-view>
+        <button type="primary" form-type="submit">提交</button>
+        <button type="warn" form-type="reset">重置</button>
+    </form>
+</view>

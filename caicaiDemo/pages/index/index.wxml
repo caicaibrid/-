@@ -1,0 +1,41 @@
+<!--index.wxml
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view id="clickEvent" data-aa="clickEvent" class="public" catchtap="clickEvent">
+    {{publicKey}}
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>-->
+<view class="scroll_view_parent">
+  <scroll-view scroll-x="{{true}}"class="scroll_view">
+    <view id="green"></view>
+    <view id="blue"></view>
+    <view id="red"></view>
+  </scroll-view>
+</view>
+<view class="scroll_view_parent">
+  <scroll-view scroll-y="{{true}}" bindscroll="scroll" scroll-left="{{scrollLeft}}" scroll-into-view="{{toview}}" bindscrolltoupper="upper" bindscrolltolower="lower" class="scroll_view scroll_view_y">
+    <view id="blue"></view>
+    <view id="red"></view>
+    <view id="green"></view>
+  </scroll-view>
+</view>
+<view class="scroll_view_parent">
+  <swiper class="scroll_view" indicator-dots="true" interval="2000" indicator-color="rgba(0,0,0,0.3)" current="0" autoplay="true" indicator-active-color="#fff" circular="false">
+    <swiper-item id="red"></swiper-item>
+    <swiper-item id="green"></swiper-item>
+    <swiper-item id="blue"></swiper-item>
+  </swiper>
+</view>
+<view>
+  <navigator url="tolist"><image binderror="imgError" style="width:100px;height:50px" src="/static/img/cat.jpg" mode="aspectFit"></image></navigator>
+  <audio poster="http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000" name="菜菜audio" author="菜菜" id="audio" loop="true" controls="true" src="http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46"></audio>
+  <audio poster="http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000" name="菜菜audio" author="菜菜" id="audio" loop="true" controls="true" src="http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46"></audio>
+  <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="true" danmu-btn="true" enable-danmu="true" danmu-list="{{danmuList}}"></video>
+  <map longitude="110.85293" latitude="37.423962" controls="{{controls}}" scale="5" markers="{{markers}}" show-location="true"/>
+</view>

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<import src="../template/tag" />
+<import src="../template/movie_list" />
+<import src="../template/sort" />
+
+<template is="tag" data="{{tagData,tagCurrent}}"></template>
+<scroll-view bindscrolltolower="scrolltolower" class="movie_list" scroll-y="true">
+    <template is="movie_list" data="{{movieList}}"></template>
+    <view class="loading" wx:if="{{isLower}}">正在加载中...</view>
+</scroll-view>
+<template is="sort" data="{{sortList}}"></template>
