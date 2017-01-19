@@ -1,0 +1,18 @@
+<template name="movie_list">
+    <view  wx:key="{{index}}" wx:for="{{movieList}}" class="movie_list_list">
+        <navigator url="../video/video?video={{item.source_url}}" open-type="navigate">
+            <view class="movie_list_list_left">
+                <image src="{{item.image_url}}"></image>
+                <text>{{item.video_duration_str}}</text>
+            </view>
+            <view class="movie_list_list_right">
+                <text class="movie_title">{{item.title}}</text>
+                <view>
+                    <image src="{{item.media_avatar_url}}"></image>
+                    <text class="source_name">{{item.source}}</text>
+                </view>
+                <view class="source_time">{{item.behot_time}}</view>
+            </view>
+        </navigator>
+    </view>
+</template>

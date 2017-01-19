@@ -1,0 +1,126 @@
+/**app.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+view{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.video{
+  width: 100%;
+  height: 30%;
+}
+.tagOuter,.tag-scroll{
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  white-space: nowrap;
+}
+.toutiaoOuter{
+  position: relative;
+  width: 100%;
+  flex: 1;
+  background: #eee;
+  overflow: hidden;
+}
+.movie_list{
+  width: 100%;
+  height: 100%;
+}
+.tag-scroll-item{
+  display: inline-block;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  line-height: 50rpx;
+  margin:5rpx;
+}
+.tag-scroll-item.active{
+  background: #4b8ccb;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.movie_list .movie_list_list navigator{
+  display: flex;
+  margin: 10rpx;
+  padding: 10rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  justify-content: center;
+}
+.movie_list .movie_list_list navigator .movie_list_list_left{
+  position: relative;
+  width: 300rpx;
+}
+.movie_list .movie_list_list navigator .movie_list_list_left image{
+  width: 300rpx;
+  height: 200rpx;
+  border: 2rpx solid #fff
+}
+.movie_list .movie_list_list navigator .movie_list_list_left text{
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 24rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 6rpx;
+}
+.movie_list .movie_list_list navigator .movie_list_list_right{
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10rpx;
+}
+.movie_list .movie_list_list navigator .movie_list_list_right .movie_title{
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+}
+.movie_list .movie_list_list navigator .movie_list_list_right view{
+  line-height: 50rpx;
+}
+.movie_list .movie_list_list navigator .movie_list_list_right view image{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5rpx;
+  border: 1px solid #999;
+}
+.movie_list .movie_list_list navigator .movie_list_list_right view .source_name{
+  font-size: 26rpx;
+  color:#6495ed;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie_list .movie_list_list navigator .movie_list_list_right view.source_time{
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  color: #999;
+}
+.movie_list .loading{
+  color: #ccc;
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx;
+}
